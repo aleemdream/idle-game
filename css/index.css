@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: beige;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+p {
+    font-size: xx-large;
+}
+
+#fishing-icon {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 100%;
+    padding: 0;
+    overflow: hidden;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+#fishing-icon-inner {
+    object-fit: none;
+}
+
+.dock {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.caught-fish {
+    top: 0;
+    left: 90px;
+    position: absolute;
+    transition: linear 1s;
+    opacity: 0;
+}
+
+.catch {
+    opacity: 1;
+    transform: translate(0, 0);
+}
