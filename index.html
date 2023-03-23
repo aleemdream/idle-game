@@ -16,18 +16,24 @@
 
 <body>
     <h1>Phish Phinder</h1>
-    <p>Current fish count: <span id="fish-count">0</span></p>
+
+    <p class="fish-count-text"><span id="fish-count" class="fish-count-text">0</span> Fish</p>
+
     <div class="dock">
         <div id="fishing-icon">
             <img id="fishing-icon-inner" onclick="catchFish()" src="images/icons8-ocean-64.png" alt="dumb bitch">
         </div>
     </div>
+
     <p id="upgrades">Upgrades:</p>
-    <button onclick="buyUpgrade(1)">Fishing Rod ($10)</button>
-    <span id="upgrade-1">0</span>
-    <br>
-    <button onclick="buyUpgrade(2)">Fishing Net ($50)</button>
-    <span id="upgrade-2">0</span>
+
+    <div class="btn-group-vertical" role="group">
+        <button type="button" class="btn btn-default" onclick="buyUpgrade(1)">Fishing Rod ($10)</button>
+        <span id="upgrade-1">0</span>
+
+        <button type="button" class="btn btn-default" onclick="buyUpgrade(2)">Fishing Net ($50)</button>
+        <span id="upgrade-2">0</span>
+    </div>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
